@@ -1,0 +1,4 @@
+Installed:
+ - nodemon
+ - express
+ - mongoose
