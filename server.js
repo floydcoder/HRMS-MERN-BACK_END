@@ -1,5 +1,7 @@
 const express = require('express');
 const db = require('./config/db_connect');
+const Employee = require('./models/Employee');
+const User = require('./models/Users');
 
 const app = express();
 
