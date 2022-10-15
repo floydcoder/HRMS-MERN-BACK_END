@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/floydcoder/101307949_COMP3123_Assignment1#readme",
   "dependencies": {
-    "mongoose": "^6.6.5",
-    "nodemon": "^2.0.20"
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5"
   },
   "devDependencies": {
-    "express": "^4.18.2"
+    "nodemon": "^2.0.20"
   }
 }
