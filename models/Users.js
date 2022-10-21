@@ -29,9 +29,9 @@ const userSchema = new mongoose.Schema({
 });
 
 const User = mongoose.model('User', userSchema);
-User.create({ username: 'asdasdsa', email: 'ab.ca', password: '123456' }).then(
-  (u) => console.log(u)
-);
+// User.create({ username: 'asdasdsa', email: 'ab.ca', password: '123456' }).then(
+//   (u) => console.log(u)
+// );
 
 //
 console.log('Printed even when imported');
