@@ -1,7 +1,7 @@
 {
   "name": "101307949_comp3123_assignment1",
-  "version": "1.0.0",
-  "description": "The first assigment for the Full Stack Class at GB",
+  "version": "2.0.0",
+  "description": "11-24-2022 restructured in MVC style ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,8 +19,15 @@
   },
   "homepage": "https://github.com/floydcoder/101307949_COMP3123_Assignment1#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
-    "mongoose": "^6.6.5"
+    "mongoose": "^6.6.5",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "date-fns": "^2.23.0",
+    "dotenv": "^10.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
