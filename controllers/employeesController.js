@@ -30,6 +30,7 @@ const createNewEmployee = async (req, res) => {
 };
 
 const updateEmployee = async (req, res) => {
+  // console.log(req);
   if (!req?.body?.id) {
     return res.status(400).json({ message: 'ID parameter is required.' });
   }
@@ -40,8 +41,8 @@ const updateEmployee = async (req, res) => {
       .status(204)
       .json({ message: `No employee matches ID ${req.body.id}.` });
   }
-  if (req.body?.firstname) employee.firstname = req.body.firstname;
-  if (req.body?.lastname) employee.lastname = req.body.lastname;
+  if (req.body?.firstname) employee.first_name = req.body.firstname;
+  if (req.body?.lastname) employee.last_name = req.body.lastname;
   if (req.body?.email) employee.email = req.body.email;
   if (req.body?.gender) employee.gender = req.body.gender;
   if (req.body?.salary) employee.salary = req.body.salary;
@@ -50,6 +51,7 @@ const updateEmployee = async (req, res) => {
 };
 
 const deleteEmployee = async (req, res) => {
+  console.log(req.body.id);
   if (!req?.body?.id)
     return res.status(400).json({ message: 'Employee ID required.' });
 
