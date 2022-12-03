@@ -3,7 +3,6 @@ const bcrypt = require('bcrypt');
 
 const handleNewUser = async (req, res) => {
   const { email, pwd } = req.body;
-  console.log(email, pwd);
   if (!email || !pwd)
     return res
       .status(400)
@@ -22,8 +21,6 @@ const handleNewUser = async (req, res) => {
       email: email,
       password: hashedPwd,
     });
-
-    console.log(result);
 
     res.status(201).json({ success: `New user ${email} created!` });
   } catch (err) {
